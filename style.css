@@ -1,0 +1,76 @@
+/* The body is coming first at the CSS because it ist firstly presented in the HTML code */
+body { 
+
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  margin: 0px; /* This will remove the margin between the body and the page */
+
+}
+
+#hero {
+
+  width: 592px;
+  margin: 0 auto 72px; /* With the auto, the margin will try to balance the box hero with the space the page has, putting it on the center, 0px for the top, and 72px for the bottom */
+
+}
+
+#hero img { /* # means the id that has been given to the div */ 
+
+  margin-bottom: 72px;
+
+}
+
+h1 { 
+
+  /* h1 is inside the body, but because of the specifity rule, as h1 is more specific than body, h1 has the sans serif font */
+  font-family: 'Inter', sans-serif;
+  font-size: 48px;
+  line-height: 56px;
+  font-weight: normal;
+  margin-bottom: 32px;
+
+}
+
+h1 span {
+
+  /* the specifity rule does it's job again here, as h1 span is more specific than h1, so it will apply bold attribute to every span tag inside h1*/
+  font-weight: bold;
+
+}
+
+span, a{
+
+  color: #FF9900;
+
+}
+
+p, #footer {
+
+  color: #7D7987;
+  font-size: 14px;
+  line-height: 28px;
+
+}
+
+#footer a + a{ /* the + selector will help to select the a that has an a before it, this rule will be shown in the HTML code*/
+
+  margin-left: 28px;
+
+}
+
+.line { /* the .selector will choose a class, while the # selector will choose an id */
+  
+  width: 568px;
+  height: 0px;
+  border: 1px solid #ECEFF2;
+  margin: 0 auto 8px;
+
+}
+
+#balls {
+
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+
+}
